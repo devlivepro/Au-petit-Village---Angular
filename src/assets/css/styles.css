@@ -1,0 +1,123 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Bubbleboddy Neue";
+  src: url("../fonts/BubbleboddyNeue-Bold\ Trial.otf") format("opentype"),
+    url("../fonts/BubbleboddyNeue-ExtraBold Trial.otf") format("opentype"),
+    url("../fonts/BubbleboddyNeue-Light Trial.otf") format("opentype"),
+    url("../fonts/bubbleboddyneue-regular trial.otf") format("opentype"),
+    url("../fonts/BubbleboddyNeue-Thin Trial.otf") format("opentype");
+}
+@font-face {
+  font-family: "Comfortaa";
+  src: url("../fonts/Comfortaa-VariableFont_wght.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  display: inline;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #f8f9fa;
+}
+.navbar {
+  background-color: #fdd90b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Bubbleboddy Neue";
+  text-transform: uppercase;
+}
+p {
+  font-family: "Comfortaa";
+}
+.color-template1 {
+  color: #f9d0a3;
+}
+.color-template1 {
+  color: #fdd90b;
+}
+.color-template1 {
+  color: #151217;
+}
+.color-template1 {
+  color: #da001e;
+}
+.container_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+  width: 100%;
+}
+.container_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+.container_home {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: #ffffff;
+}
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.menu {
+  font-family: "Bubbleboddy Neue", sans-serif;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.menu ul li {
+  margin-left: 20px;
+}
+
+.menu ul li:first-child {
+  margin-left: 0;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #333;
+}
+.menu ul li a:hover {
+  color: #007bff;
+}
+main {
+  background-color: #da001e;
+  width: 100%;
+}
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
