@@ -1,9 +1,18 @@
-<header>
-    <nav>
-        <ul>
-            <li>Test</li>
-            <li>Test2</li>
-            <li>Test3</li>
-        </ul>
+<header class="navbar">
+  <div class="container">
+    <div class="logo">
+      <a [routerLink]="['/']">
+        <img
+          src="assets/img/Logo_au petit village.jpg"
+          alt="Logo au petit village"
+      /></a>
+    </div>
+    <nav class="menu">
+      <ul>
+        <li><a [routerLink]="['/']">Accueil</a></li>
+        <li><a [routerLink]="['/products']">Produits</a></li>
+        <li><a [routerLink]="['/abouts']">À propos</a></li>
+      </ul>
     </nav>
+  </div>
 </header>
