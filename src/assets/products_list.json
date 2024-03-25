@@ -1,0 +1,51 @@
+[
+    {
+      "name": "Figurine Astérix et Obélix",
+      "description": "Cette figurine de collection représente Astérix dans toute sa gloire. Sculptée avec un souci du détail exceptionnel, elle capture parfaitement l'esprit espiègle et le courage du célèbre Gaulois. Un must pour tout fan d'Astérix.",
+      "price": 25.99,
+      "pictureURL": "assets/img/figure1.jpg",
+      "ref": "FIG1"
+    },
+
+    {
+      "name": "Figurine Astérix en action",
+      "description": "cette figurine d'Astérix en plein cœur de l'aventure ! Capturant toute l'énergie et la détermination du célèbre Gaulois, cette figurine est un hommage vivant à l'un des personnages les plus emblématiques de la bande dessinée. Que ce soit pour enrichir votre collection ou pour revivre vos moments préférés de la série, cette figurine est un ajout indispensable à tout fan d'Astérix et Obélix.",
+      "price": 29.99,
+      "pictureURL": "assets/img/figure2.jpg",
+      "ref": "FIG2"
+    },
+
+    {
+      "name": "Figurine Obélix et son menhir",
+      "description": "Cette figurine représentant le célèbre Gaulois portant fièrement son menhir. Avec un sourire contagieux et une posture pleine de confiance, cette figurine capture l'esprit joyeux et l'humour irrésistible du compagnon d'Astérix. Fabriquée avec un souci du détail impeccable, cette figurine est un hommage parfait à l'un des personnages les plus aimés de la bande dessinée.",
+      "price": 34.99,
+      "pictureURL": "assets/img/figure3.jpg",
+      "ref": "FIG3"
+    },
+
+    {
+      "name": "Figurine Obélix au banquet",
+      "description": "Obélix, le célèbre compagnon d'Astérix, est représenté en train de festoyer lors d'un banquet gaulois. Sa jovialité et son appétit sans fin sont capturés dans cette figurine détaillée.",
+      "price": 30.99,
+      "pictureURL": "assets/img/figure4.jpg",
+      "ref": "FIG4"
+    },
+
+    {
+      "name": "Figurine Idéfix en action",
+      "description": "Idéfix, le fidèle compagnon d'Astérix et d'Obélix, est immortalisé en pleine action dans cette figurine. Avec son agilité et son courage, Idéfix est prêt à relever tous les défis pour défendre ses amis gaulois.",
+      "price": 24.99,
+      "pictureURL": "assets/img/figure5.jpg",
+      "ref": "FIG5"
+    },
+
+    {
+      "name": "Figurine Panoramix le druide",
+      "description": "Panoramix, le sage druide du village gaulois, est représenté dans toute sa sagesse dans cette figurine. Avec sa barbe blanche et sa robe de druide, Panoramix incarne la sagesse et la puissance de la nature.",
+      "price": 19.99,
+      "pictureURL": "assets/img/figure6.jpg",
+      "ref": "FIG6"
+    }
+
+  ]
+  
