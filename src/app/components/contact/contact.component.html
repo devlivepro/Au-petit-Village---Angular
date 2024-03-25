@@ -1,39 +1,54 @@
 <main>
-  <div class="container_home">
-    <div class="contact-form">
-      <h2 class="color-template2">Contactez-nous</h2>
-      <form (ngSubmit)="submitForm()" #contactForm="ngForm">
-        <div class="form-group">
-          <label for="name">Nom:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            [(ngModel)]="formData.name"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            [(ngModel)]="formData.email"
-            required
-          />
-        </div>
-        <div class="form-group">
-          <label for="message">Message:</label>
-          <textarea
-            id="message"
-            name="message"
-            [(ngModel)]="formData.message"
-            required
-          ></textarea>
-        </div>
-        <button type="submit" [disabled]="!contactForm.valid">Envoyer</button>
-      </form>
+    <div class="container_home">
+      <div class="contact-form">
+        <h2 class="color-template2">Contactez-nous</h2>
+        <form (ngSubmit)="submitForm()" #contactForm="ngForm" novalidate>
+          <div class="form-group">
+            <label for="name">Nom:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              [(ngModel)]="formData.name"
+              required
+              #nameInput="ngModel"
+            />
+            <div *ngIf="nameInput.invalid && (nameInput.dirty || nameInput.touched)" class="error-message">
+              <div *ngIf="nameInput.errors && nameInput.errors['required']">Nom requis</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              [(ngModel)]="formData.email"
+              required
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+              #emailInput="ngModel"
+            />
+            <div *ngIf="emailInput.invalid && (emailInput.dirty || emailInput.touched)" class="error-message">
+              <div *ngIf="emailInput.errors && emailInput.errors['required']">Email requis</div>
+              <div *ngIf="emailInput.errors && emailInput.errors['email']">Email invalide</div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              [(ngModel)]="formData.message"
+              required
+              #messageInput="ngModel"
+            ></textarea>
+            <div *ngIf="messageInput.invalid && (messageInput.dirty || messageInput.touched)" class="error-message">
+              <div *ngIf="messageInput.errors && messageInput.errors['required']">Message requis</div>
+            </div>
+          </div>
+          <button type="submit" [disabled]="contactForm.invalid">Envoyer</button>
+        </form>
+      </div>
     </div>
-  </div>
-</main>
+  </main>
+  
