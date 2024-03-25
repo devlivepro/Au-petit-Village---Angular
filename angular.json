@@ -35,7 +35,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.css"
+              "src/assets/css/styles.css",
+              "src/assets/css/styles.mobile.css",
+              "src/assets/css/styles-tablet.css"
             ],
             "scripts": []
           },
@@ -94,7 +96,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/css/styles.css"
+              "src/assets/css/styles.css",
+              "src/assets/css/styles.mobile.css",
+              "src/assets/css/styles-tablet.css"
             ],
             "scripts": []
           }
