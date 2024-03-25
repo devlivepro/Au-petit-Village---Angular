@@ -1,5 +1,6 @@
 <main class="main">
   <div class="container_home">
+    <h1 class="color-template1">au petit village</h1>
     <p>
       Bienvenue sur Au Petit Village, l'adresse en ligne incontournable pour
       tous les passionnés de la bande dessinée Astérix et Obélix ! Plongez dans
@@ -25,5 +26,35 @@
       capturée dans chaque pièce de notre collection exclusive. Bienvenue à Au
       Petit Village, où l'aventure et le rire n'ont pas d'âge !
     </p>
+
+    <div>
+      <section>
+        <h1 class="banner">Les produits les plus vendus</h1>
+
+        <!-- Barre de rechercher -->
+        <input
+          type="text"
+          [(ngModel)]="searchTerm"
+          placeholder="Rechercher par nom..."
+        />
+        
+        <!-- Liste des produits les plus vendus -->
+        <div class="products-list">
+          <div
+            *ngFor="let product of filteredProducts | priceSort : sortBy"
+            class="product-card"
+          >
+            <div class="product-image">
+              <img [src]="product.pictureURL" alt="{{ product.name }}" />
+            </div>
+            <div class="product-details">
+              <h3>{{ product.name }}</h3>
+              <p class="description">{{ product.description }}</p>
+              <p class="price">Prix: {{ product.price }}€</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </main>
