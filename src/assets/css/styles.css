@@ -24,6 +24,7 @@ a {
   text-decoration: none;
 }
 body {
+  font-family: Open Sans;
   font-size: 16px;
   line-height: 1.5;
   color: #333;
@@ -52,13 +53,13 @@ div{
 .color-template1 {
   color: #f9d0a3;
 }
-.color-template1 {
+.color-template2 {
   color: #fdd90b;
 }
-.color-template1 {
+.color-template3 {
   color: #151217;
 }
-.color-template1 {
+.color-template4 {
   color: #da001e;
 }
 .container_logo {
