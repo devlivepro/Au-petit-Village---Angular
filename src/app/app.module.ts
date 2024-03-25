@@ -10,9 +10,11 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
 import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 import { PriceSortPipe } from './components/products/price-sort.pipe';
 import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     ProductsComponent,
     AboutComponent,
-    PriceSortPipe
+    PriceSortPipe,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

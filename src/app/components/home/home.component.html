@@ -29,28 +29,35 @@
 
     <div>
       <section>
-        <h1 class="banner">Les produits les plus vendus</h1>
+        <h1 class="banner">Les figurines de notre catalogue</h1>
 
-        <!-- Barre de rechercher -->
+        <!-- Barre de recherche -->
         <input
           type="text"
           [(ngModel)]="searchTerm"
           placeholder="Rechercher par nom..."
         />
         
-        <!-- Liste des produits les plus vendus -->
+        <div>
+        <!-- Menu déroulant pour le tri -->
+        <label for="sort">Trier par :</label>
+        <select id="sort" [(ngModel)]="sortBy">
+          <option value="asc">Prix croissant</option>
+          <option value="desc">Prix décroissant</option>
+        </select>
+        </div>
+
+        <!-- Liste des produits -->
         <div class="products-list">
           <div
             *ngFor="let product of filteredProducts | priceSort : sortBy"
-            class="product-card"
+            class="product-card" (click)="viewProductDetails(product)"
           >
             <div class="product-image">
               <img [src]="product.pictureURL" alt="{{ product.name }}" />
             </div>
             <div class="product-details">
               <h3>{{ product.name }}</h3>
-              <p class="description">{{ product.description }}</p>
-              <p class="price">Prix: {{ product.price }}€</p>
             </div>
           </div>
         </div>
