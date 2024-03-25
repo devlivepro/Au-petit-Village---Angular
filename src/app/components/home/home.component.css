@@ -1,0 +1,65 @@
+/* Styles généraux pour la liste de produits */
+.products-list {
+  display: flex;
+  gap: 20px; /* Espacement entre les cartes */
+}
+
+/* Styles pour chaque carte de produit */
+.product-card {
+  width: calc(33% - 10px); /* Pour afficher deux cartes par ligne */
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styles pour l'image du produit */
+.product-image img {
+  width: 100%; /* Pour que l'image remplisse la largeur de la carte */
+  border-radius: 5px;
+}
+
+/* Styles pour les détails du produit */
+.product-details {
+  margin-top: 10px;
+}
+
+/* Styles pour le nom du produit */
+.product-details h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* Styles pour la description du produit */
+.product-details .description {
+  margin-bottom: 10px;
+}
+
+/* Styles pour le prix du produit */
+.product-details .price {
+  font-weight: bold;
+}
+/* Style de base pour le champ de recherche */
+input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Style lorsque le champ de recherche est en focus */
+input[type="text"]:focus {
+  outline: none;
+  border-color: #f9d0a3; /* Couleur de la bordure en focus */
+}
+
+/* Style pour le placeholder */
+input[type="text"]::placeholder {
+  color: #aaa; /* Couleur du texte du placeholder */
+}
+
+/* Style pour le texte saisi */
+input[type="text"]::-webkit-input-placeholder {
+  color: #333; /* Couleur du texte saisi */
+}
