@@ -64,7 +64,7 @@ div {
 .color-template4 {
   color: #da001e;
 }
-.container {
+.container_logo {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,16 +72,6 @@ div {
   padding: 10px 20px;
   background-color: white;
   width: 100%;
-}
-.container_logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px 20px;
-  background-color: white;
-  width: 100%;
-  max-width: 960px;
-  margin: 0 auto;
 }
 .container_nav {
   display: flex;
