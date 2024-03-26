@@ -48,9 +48,9 @@ h6 {
 p {
   font-family: "Comfortaa";
 }
-div{
+div {
   margin-top: 10px;
-  margin-block-start: 10px
+  margin-block-start: 10px;
 }
 .color-template1 {
   color: #f9d0a3;
@@ -64,7 +64,7 @@ div{
 .color-template4 {
   color: #da001e;
 }
-.container_logo {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,6 +72,16 @@ div{
   padding: 10px 20px;
   background-color: white;
   width: 100%;
+}
+.container_logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 10px 20px;
+  background-color: white;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
 }
 .container_nav {
   display: flex;
@@ -91,7 +101,7 @@ div{
   width: 100px;
   height: auto;
 }
-.img-products{
+.img-products {
   height: 30px;
   width: 30px;
 }
@@ -104,7 +114,6 @@ div{
   list-style-type: none;
   text-transform: uppercase;
 }
-
 .menu ul li {
   margin-left: 20px;
 }
@@ -124,8 +133,8 @@ main {
   background-color: #da001e;
   width: 100%;
 }
-.banner{
-  background-color: #F9D0A3;
+.banner {
+  background-color: #f9d0a3;
   padding: 10px;
   color: #151217;
 }
